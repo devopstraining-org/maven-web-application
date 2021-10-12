@@ -17,7 +17,7 @@ maven "3.6.3"
 
 stages{
 
- stage('CheckoutCodeGit'){
+ stage('CheckoutCode'){
  steps{
    git branch: 'development', credentialsId: '6a6dfb50-0907-46a0-9303-c9c87db27742', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
  }
