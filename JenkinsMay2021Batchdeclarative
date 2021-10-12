@@ -12,7 +12,7 @@ buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', 
 }
 
 tools{
-maven "3.6.3"
+ "3.6.3"
 }
 
 stages{
@@ -23,7 +23,7 @@ stages{
  }
  }
  
- stage('Build'){
+ stage('MavenBuild'){
   steps{
   sh "mvn clean package"
   }
